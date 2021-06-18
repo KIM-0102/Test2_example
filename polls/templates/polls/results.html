@@ -6,6 +6,7 @@
 </head>
 <body>
 <h1> {{ question.question_text }}</h1>
+<h3> 투표 결과 확인하기 </h3>
 <ul>
 {% for choice in question.choice_set.all %}
     <li>{{ choice.choice_text }} - {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
